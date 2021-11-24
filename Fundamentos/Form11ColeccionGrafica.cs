@@ -31,5 +31,17 @@ namespace Fundamentos
             this.lblSeleccionado.Text = "Item: "
                 + this.lstElemento.SelectedItem;
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            //PARA ELIMINAR TENEMOS DOS METODOS 
+            //.Remove(Object)
+            //.RemoveAt(Index)
+            //0 ANA, 1 LUCIA, 2 MARIA, 3 ANA
+            //.Remove("ANA") => SOLO ELIMINA EL PRIMER ELEMENTO ANA
+            //RemoveAt(4) => seleccionamos que ANA eliminar
+            int indice = this.lstElemento.SelectedIndex;//seleccionamos el indice
+            this.lstElemento.Items.RemoveAt(indice);//eliminamos ese indice
+        }
     }
 }
