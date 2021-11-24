@@ -137,7 +137,7 @@ namespace Fundamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(473, 450);
             this.Controls.Add(this.lblSeleccionado);
             this.Controls.Add(this.lblPosicion);
             this.Controls.Add(this.btnLimpiarLista);
@@ -149,7 +149,7 @@ namespace Fundamentos
             this.Controls.Add(this.Elementos);
             this.Controls.Add(this.lstElemento);
             this.Name = "Form11ColeccionGrafica";
-            this.Text = "Form11ColeccionGrafica";
+            this.Text = ".";
             this.ResumeLayout(false);
             this.PerformLayout();
 
