@@ -16,5 +16,20 @@ namespace Fundamentos
         {
             InitializeComponent();
         }
+
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            string elem = this.txtElemento.Text;
+            this.lstElemento.Items.Add(elem);//añadimos el elemento 
+
+        }
+
+        private void lstElemento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.lblPosicion.Text = "Indice: "+ 
+                this.lstElemento.SelectedIndex.ToString();
+            this.lblSeleccionado.Text = "Item: "
+                + this.lstElemento.SelectedItem;
+        }
     }
 }

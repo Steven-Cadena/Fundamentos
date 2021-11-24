@@ -49,6 +49,7 @@ namespace Fundamentos
             this.lstElemento.Name = "lstElemento";
             this.lstElemento.Size = new System.Drawing.Size(120, 94);
             this.lstElemento.TabIndex = 0;
+            this.lstElemento.SelectedIndexChanged += new System.EventHandler(this.lstElemento_SelectedIndexChanged);
             // 
             // Elementos
             // 
@@ -77,6 +78,7 @@ namespace Fundamentos
             this.btnInsertar.TabIndex = 3;
             this.btnInsertar.Text = "Insertar ";
             this.btnInsertar.UseVisualStyleBackColor = false;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // btnModificar
             // 
