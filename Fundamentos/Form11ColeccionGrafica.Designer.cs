@@ -89,6 +89,7 @@ namespace Fundamentos
             this.btnModificar.TabIndex = 4;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -117,6 +118,7 @@ namespace Fundamentos
             this.btnLimpiarLista.TabIndex = 7;
             this.btnLimpiarLista.Text = "Limpiar Lista";
             this.btnLimpiarLista.UseVisualStyleBackColor = false;
+            this.btnLimpiarLista.Click += new System.EventHandler(this.btnLimpiarLista_Click);
             // 
             // lblPosicion
             // 

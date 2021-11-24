@@ -26,7 +26,11 @@ namespace Fundamentos
             //Application.Run(new Form07ValidarMail());
             //Application.Run(new Form08SumarNumerosString());
             //Application.Run(new Form09InvertirTextStringBuilder());
-            Application.Run(new Form10ValidarISBN());
+            //Application.Run(new Form10ValidarISBN());
+            //Application.Run(new Form11ColeccionGrafica());
+            //Application.Run(new Form12SeleccionMultipleColeccion());
+            //Application.Run(new Form13ColeccionNumeros());
+            Application.Run(new Form14TiendaProductos());
 
         }
     }

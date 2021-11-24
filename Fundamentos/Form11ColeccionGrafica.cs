@@ -43,5 +43,17 @@ namespace Fundamentos
             int indice = this.lstElemento.SelectedIndex;//seleccionamos el indice
             this.lstElemento.Items.RemoveAt(indice);//eliminamos ese indice
         }
+
+        private void btnLimpiarLista_Click(object sender, EventArgs e)
+        {
+            this.lstElemento.Items.Clear();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            string elem = this.txtElemento.Text;
+            int indice = this.lstElemento.SelectedIndex;
+            this.lstElemento.Items[indice] = elem; //accedemos al item y lo modificamos
+        }
     }
 }
