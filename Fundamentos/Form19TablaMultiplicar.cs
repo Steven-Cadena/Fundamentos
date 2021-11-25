@@ -30,6 +30,7 @@ namespace Fundamentos
         {
             int numero = int.Parse(this.txtNumero.Text);
             int operacion = 1;
+            this.cajas.Reverse();
             foreach (TextBox caj in this.cajas) 
             {
                 caj.Text = (numero * operacion).ToString();
