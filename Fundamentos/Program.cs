@@ -33,7 +33,9 @@ namespace Fundamentos
             //Application.Run(new Form14TiendaProductos());
             //Application.Run(new Form15EjemploMetodos());
             //Application.Run(new Form16ColeccionArrayList());
-            Application.Run(new Form17ColeccionList());
+            //Application.Run(new Form17ColeccionList());
+            //Application.Run(new Form18SumarNumeros());
+            Application.Run(new Form19TablaMultiplicar());
 
 
         }
