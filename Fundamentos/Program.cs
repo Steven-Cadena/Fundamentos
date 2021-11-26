@@ -35,7 +35,8 @@ namespace Fundamentos
             //Application.Run(new Form16ColeccionArrayList());
             //Application.Run(new Form17ColeccionList());
             //Application.Run(new Form18SumarNumeros());
-            Application.Run(new Form19TablaMultiplicar());
+            //Application.Run(new Form19TablaMultiplicar());
+            Application.Run(new Form20ListaMeses());
 
 
         }
