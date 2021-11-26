@@ -37,7 +37,6 @@ namespace Fundamentos
                 this.lstMeses.Items.Add(nombreMes.ToUpper() + ": " + temp);
                 //agregamos un mes a la fecha para poder coger el siguiente mes 
                 fecha = fecha.AddMonths(1); 
-
             }
         }
 
