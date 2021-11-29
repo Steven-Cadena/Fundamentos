@@ -39,7 +39,7 @@ namespace Fundamentos
             //Application.Run(new Form20ListaMeses());
             //Application.Run(new Form21POO());
             //Application.Run(new Form22EjemploClases());
-            Application.Run(new Form23TrabajarFicheros());
+            Application.Run(new Form24FilesNombres());
         }
     }
 }
