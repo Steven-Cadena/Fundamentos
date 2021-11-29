@@ -20,6 +20,7 @@ namespace Fundamentos
 
         private void btnInstanciarPersona_Click(object sender, EventArgs e)
         {
+            this.lstPropiedades.Items.Clear();
             Persona person = new Persona();
             person.Nombre = "Alumno Net";
             person.Apellidos = "Core";
@@ -45,6 +46,35 @@ namespace Fundamentos
             this.lstPropiedades.Items.Add("Nacionalidad: " + person.Nacionalidad);
             this.lstPropiedades.Items.Add("Genero: " + person.Genero);
             this.lstPropiedades.Items.Add("Domicilio: " + person.Domicilio.Calle);
+        }
+
+        private void btnInstanciarEmpleado_Click(object sender, EventArgs e)
+        {
+            this.lstPropiedades.Items.Clear();
+            Empleado empleado = new Empleado();
+            empleado.Nombre = "Empleado";
+            empleado.Apellidos = "Net Core";
+            this.lstPropiedades.Items.Add("Empleado: " 
+                + empleado.GetNombreCompleto());
+            this.lstPropiedades.Items.Add("Salario Minimo: "
+                 + empleado.GetSalarioMinimo());
+            this.lstPropiedades.Items.Add("Días de vacaciones: "
+                + empleado.GetDiasVacaciones());
+
+        }
+
+        private void btnInstanciarDirector_Click(object sender, EventArgs e)
+        {
+            this.lstPropiedades.Items.Clear();
+            Director director = new Director();
+            director.Nombre = "M.";
+            director.Apellidos = "Rajoy";
+            this.lstPropiedades.Items.Add("Director: " 
+                + director.GetNombreCompleto());
+            this.lstPropiedades.Items.Add("Salario Minimo: " 
+                + director.GetSalarioMinimo());
+            this.lstPropiedades.Items.Add("Días de vacaciones: "
+                + director.GetDiasVacaciones());
         }
     }
 }

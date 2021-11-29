@@ -8,16 +8,19 @@ namespace ProyectoClases
 {
     public class Meses
     {
-        public Meses(string mes, int tempMax, int tempMin) 
+        public Meses(string nombre, int tempMax, int tempMin) 
         {
-            this.Mes = mes;
+            this.Nombre = nombre;
             this.TemperaturaMaxima = tempMax;
             this.TemperaturaMinima = tempMin;
         }
 
-        public String Mes { get; set; }
+        public String Nombre { get; set; }
         public int TemperaturaMaxima { get; set;}
         public int TemperaturaMinima { get; set;}
-        public int _MediaMensual { get; set; }
+        public int GetMediaMensual() 
+        {
+            return this.TemperaturaMaxima + this.TemperaturaMinima / 2;
+        }
     }
 }

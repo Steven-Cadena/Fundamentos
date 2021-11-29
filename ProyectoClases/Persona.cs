@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,17 @@ namespace ProyectoClases
     public enum Paises { España, Italia, Polonia, Argentina, Ecuador, Colombia }
     public class Persona//hay que poner publis para que la usen otras clases
     {
+        //constructores
+        public Persona() 
+        {
+            Debug.WriteLine("Constructor Persona vacio");
+        }
+        public Persona(string nombre, string apellidos) 
+        {
+            Debug.WriteLine("Constructor PERSONA con párametros");
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+        }
         #region PROPIEDADES DE LA CLASE 
         public Direccion Domicilio {get;set;}
         //esto lo podemos hacer cuando nos da igual lo que el usuario inserte en esa propiedad

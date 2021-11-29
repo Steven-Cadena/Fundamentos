@@ -149,7 +149,7 @@ namespace Fundamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(448, 450);
             this.Controls.Add(this.txtTempMaxima);
             this.Controls.Add(this.txtTempMinima);
             this.Controls.Add(this.txtTempMediaMensual);

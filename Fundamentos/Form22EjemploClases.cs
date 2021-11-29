@@ -17,13 +17,15 @@ namespace Fundamentos
         public Form22EjemploClases()
         {
             InitializeComponent();
+            //inicializar siempre aqui los objetos 
+            mesesGuardados = new List<Meses>();
         }
 
         private void btnGenerarMeses_Click(object sender, EventArgs e)
         {
-            Meses mes;
+            this.mesesGuardados.Clear();
+            this.lstMeses.Items.Clear();
             DateTime fecha = DateTime.Parse("01/01/2021");
-            mesesGuardados = new List<Meses>();
             Random random = new Random();
             for (int i = 0; i < 12; i++)
             {
@@ -32,9 +34,9 @@ namespace Fundamentos
                 int tempMinima = random.Next(-15,10);
                 //seleccionamos solamente el mes 
                 String nombreMes = fecha.ToString("MMMM");
-                mes = new Meses(nombreMes,tempMaxima,tempMinima);
+                Meses mes = new Meses(nombreMes,tempMaxima,tempMinima);
                 mesesGuardados.Add(mes);
-                this.lstMeses.Items.Add(mes.Mes.ToUpper());
+                this.lstMeses.Items.Add(mes.Nombre);
                 //agregamos un mes a la fecha para poder coger el siguiente mes 
                 fecha = fecha.AddMonths(1);
             }
@@ -42,10 +44,14 @@ namespace Fundamentos
 
         private void btnMostrarDatos_Click(object sender, EventArgs e)
         {
-            int seleccionado = this.lstMeses.SelectedIndex;
-            foreach (Meses mes in this.mesesGuardados) 
-            {
-                if(mes )
+            int indice = this.lstMeses.SelectedIndex;
+
+            if (indice != -1) {
+                Meses mes = this.mesesGuardados[indice];
+                this.txtNombreMes.Text = mes.Nombre;
+                this.txtTempMaxima.Text = mes.TemperaturaMaxima.ToString();
+                this.txtTempMinima.Text = mes.TemperaturaMinima.ToString();
+                this.txtTempMediaMensual.Text = (mes.GetMediaMensual()).ToString();
             }
         }
     }
