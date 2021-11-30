@@ -55,8 +55,9 @@ namespace Fundamentos
         private void btnLeerRegistro_Click(object sender, EventArgs e)
         {
             StreamReader reader = new StreamReader("listamascotas.xml");
-            this.mascotas = (MascotasCollection)
-                this.xmlSerial.Deserialize(reader);//metemos los datos del fichero en nuestra coleccion de mascotas
+
+            //metemos los datos del fichero en nuestra coleccion de mascotas
+            this.mascotas = (MascotasCollection)this.xmlSerial.Deserialize(reader);
             reader.Close();
             this.PintarMascota();
 

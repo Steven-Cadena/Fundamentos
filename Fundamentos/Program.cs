@@ -42,9 +42,10 @@ namespace Fundamentos
             //Application.Run(new Form24FilesNombres());
             //Application.Run(new Form25FicherosMascotas());
             //Application.Run(new Form26SerializationObject());
-            Application.Run(new Form27SerializationList());
+            //Application.Run(new Form27SerializationList());
+            Application.Run(new Form28ColeccionCoches());
 
-            
+
         }
     }
 }
