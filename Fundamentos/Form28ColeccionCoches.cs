@@ -55,11 +55,11 @@ namespace Fundamentos
             this.DibujarCoche();
         }
 
-        //private void  ImageToByte(Image img)
+        //private byte[]  ImageToByte(Image img)
         //{
         //    ImageConverter converter = new ImageConverter();
-
-        //    (byte[])converter.ConvertTo(img, typeof(byte[]));
+        //    this.helper.Coches.Ima
+        //    return (byte[])converter.ConvertTo(img, typeof(byte[]));
         //}
     }
 }
