@@ -11,5 +11,6 @@ namespace ProyectoClases
         //propiedades
         public String Nombre { get; set; }
         public String Raza { get; set; }
+        public int Years { get; set; }
     }
 }
